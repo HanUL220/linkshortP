@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>독도 | dok.do</title>
+    <meta charset="UTF-8">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+
+<body>
+<div id="wrapper">
+    <div id="scrollSection" class="section">
+        <div id="content">
+            <div id="title">
+                <h1 class="title">잊을 수 없는<br><span style="color:#297DEC">링크 단축</span> 사이트</h1>
+                <form method="post" action="{% url 'shorten-link' %}">
+                    {% csrf_token %}
+                    <div id="originalURL">
+                        <input type="text" id="input" class="input" name="original_link"
+                               placeholder="줄이고 싶은 링크를 입력해주세요.">
+                    </div>
+                    <div id="shortenURL">
+                        <div id="submit">
+                            <button type="submit" class="submit pointer" id="shortenButton">링크 줄이기</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="bFooter" style="line-height: 120%;">
+        <p class="footerText">Copyright 2023, <span class="footerBoldText">HanUL</span> All Rights Reserved.</p>
+    </div>
+</div>
+</body>
+</html>

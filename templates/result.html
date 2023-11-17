@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>독도 | dok.do</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/result.css' %}">
+</head>
+<body>
+    <h1>URL <span style="color:#297DEC">링크</span> 단축</h1>
+    <p><a href="https://{{ original_link }}">{{ short_link }}</a></p>
+    <p><img src="http://chart.apis.google.com/chart?cht=qr&chs=200x200&chl=https://{{ original_link }}" alt="QR code"></p>
+
+    <div id="bFooter" style="line-height: 120%;">
+        <p class="footerText">Copyright 2023, <span class="footerBoldText">HanUL</span> All Rights Reserved.</p>
+    </div>
+</body>
+</html>

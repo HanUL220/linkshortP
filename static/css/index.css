@@ -1,0 +1,103 @@
+:root {
+    --white: #ffffff;
+    --gray1: #f2f4f8;
+    --gray2: #cad2df;
+    --blue: #297DFC;
+}
+
+.header {
+    margin-top: 20px;
+    width: 100%;
+    height: 72px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 100px;
+}
+
+body {
+    font-family: sans-serif;
+    position: absolute;
+    white-space: nowrap;
+    background-color: var(--gray1);
+}
+
+.section {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+#scrollSection {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.title {
+    text-align: center;
+    margin-top: 27.5vh;
+    font-size: 4rem;
+}
+
+#originalURL {
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}
+
+#input {
+    background-color: var(--white);
+    color: var(--gray7);
+    font-weight: 400;
+    border: 1px solid var(--gray2);
+    outline: 2px solid transparent;
+    transition: outline 0.3s ease;
+    width: 800px;
+    height: 65px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-indent: 30px;
+    outline: 2px solid var(--blue);
+}
+
+#shortenURL {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    display: table;
+}
+
+.submit {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--gray2);
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 20px;
+    float: left;
+    width: 190px;
+    height: 62px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+}
+
+#bFooter {
+    position: absolute;
+    top: 90vh;
+    left: 1vw;
+    background-color: var(--gray1);
+    font-size: 0.875rem;
+}
+
+#custom {
+    width: 590px;
+    height: 62px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    text-indent: 104px;
+}
